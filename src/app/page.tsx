@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header>SKT M.2/10</Header>
       <main>
-        <section className="grid grid-cols-2 gap-5 px-5 pt-5">
+        <section className="flex flex-col sm:grid sm:grid-cols-2 gap-5 px-5 pt-5">
           <div>
             <Card>
               <CardHeader>
