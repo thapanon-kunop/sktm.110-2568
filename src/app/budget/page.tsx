@@ -12,6 +12,7 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
+  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -55,8 +56,37 @@ export default function BudgetPage() {
             </CardContent>
           </Card>
         </section>
-        <div className="px-5 grid grid-cols-2 gap-5">
-          <section className="">
+        <div className="px-5 flex flex-col sm:grid sm:grid-cols-2 gap-5">
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle>ประกาศ</CardTitle>
+                <CardDescription>
+                  ประกาศล่าสุดจากกลุ่มบริหารงานงบประมาณ
+                </CardDescription>
+                <CardAction>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant={"outline"} disabled>อ่าน</Button>
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader>
+                        <DialogTitle>{announcementHeader}</DialogTitle>
+                        <DialogDescription>ประกาศวันที่ 15 พ.ค. 2569</DialogDescription>
+                      </DialogHeader>
+                      <Announcement />
+                      <DialogFooter>
+                        <DialogClose asChild>
+                          <Button>ปิด</Button>
+                        </DialogClose>
+                      </DialogFooter>
+                    </DialogContent>
+                  </Dialog>
+                </CardAction>
+              </CardHeader>
+            </Card>
+          </section>
+          <section>
             <Card>
               <CardHeader>
                 <CardTitle>การโหวต</CardTitle>
@@ -71,42 +101,14 @@ export default function BudgetPage() {
                 >
                   Voting 69
                 </Link>
-                <Separator />
+                {/* <Separator />
                 <Link
                   href={"/budget/voting69"}
                   className={buttonVariants({ variant: "link" })}
                 >
                   Voting 69
-                </Link>
+                </Link> */}
               </CardContent>
-            </Card>
-          </section>
-          <section>
-            <Card>
-              <CardHeader>
-                <CardTitle>ประกาศ</CardTitle>
-                <CardDescription>
-                  ประกาศล่าสุดจากกลุ่มบริหารงานงบประมาณ
-                </CardDescription>
-                <CardAction>
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button variant={"secondary"}>อ่าน</Button>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle>{announcementHeader}</DialogTitle>
-                      </DialogHeader>
-                      <Announcement />
-                      <DialogFooter>
-                        <DialogClose asChild>
-                          <Button>ปิด</Button>
-                        </DialogClose>
-                      </DialogFooter>
-                    </DialogContent>
-                  </Dialog>
-                </CardAction>
-              </CardHeader>
             </Card>
           </section>
         </div>
