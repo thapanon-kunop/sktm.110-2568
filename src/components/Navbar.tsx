@@ -92,7 +92,7 @@ export function Navbar() {
       {/* Navbar Brand */}
       <Link href={"/"} className="flex items-center gap-2 font-bold">
         <Image
-          src={"/profile.png"}
+          src={"/profile.jpg"}
           alt=""
           className="ml-1 rounded-full"
           width={"30"}
