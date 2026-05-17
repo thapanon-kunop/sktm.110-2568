@@ -17,7 +17,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 import { RiTrophyLine } from "@remixicon/react";
-import { Legend, Pie, PieChart } from "recharts";
+import { Pie, PieChart } from "recharts";
 
 const q3ChartConfig = {
   agree: {
@@ -48,24 +48,23 @@ export function Question3() {
           <ChartContainer config={q3ChartConfig} className="max-h-100">
             <PieChart>
               <ChartTooltip content={<ChartTooltipContent />} />
-              <Pie
-                data={q3ChartData}
-                dataKey={"amount"}
-                nameKey={"name"}
-              />
+              <Pie data={q3ChartData} dataKey={"amount"} nameKey={"name"} />
               <ChartLegend content={<ChartLegendContent />} />
             </PieChart>
           </ChartContainer>
-          <Alert>
-            <RiTrophyLine />
-            <AlertTitle>
-              สรุป ผลมติ
-              <h2 className="text-xl font-extrabold">เห็นชอบ</h2>
-            </AlertTitle>
-            <AlertDescription>
-              ด้วยคะแนนเสียงข้างมาก 34 จาก 37 เสียง
-            </AlertDescription>
-          </Alert>
+          {/* Sumary */}
+          <div className="mt-5 sm:mt-0 flex flex-col justify-center items-end">
+            <Alert>
+              <RiTrophyLine />
+              <AlertTitle>
+                สรุป ผลมติ
+                <h2 className="text-xl font-extrabold">เห็นชอบ</h2>
+              </AlertTitle>
+              <AlertDescription>
+                ด้วยคะแนนเสียงข้างมาก 34 จาก 37 เสียง
+              </AlertDescription>
+            </Alert>
+          </div>
         </div>
       </CardContent>
     </Card>
