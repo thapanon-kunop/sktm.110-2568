@@ -14,7 +14,7 @@ export const barRedius = 4;
 export default function Voting69Page() {
   return (
     <>
-      <header className="text-center mt-5">
+      <header className="text-center my-5">
         <h1 className="text-xl sm:text-2xl">สรุปผลการลงมติภายในห้องเรียน</h1>
         <div className="flex justify-center gap-2 flex-wrap">
           <Badge variant={"default"}>ผู้มีสิทธิ์โหวตทั้งหมด: 37 คน</Badge>
