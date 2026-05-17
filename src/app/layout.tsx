@@ -1,25 +1,31 @@
 import type { Metadata } from "next";
-import { Google_Sans, Prompt, Instrument_Sans } from "next/font/google";
+import {
+  Google_Sans,
+  Prompt,
+  // ,Instrument_Sans
+} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 
-const instrumentSans = Instrument_Sans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+// const instrumentSans = Instrument_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+// });
 
 // const instrumentSans = Instrument_Sans({subsets:['latin'],variable:'--font-sans'});
 
 export const google_sans = Google_Sans({
   subsets: ["latin", "thai"],
+  variable: "--font-sans",
 });
 
 export const prompt_font = Prompt({
   weight: "600",
   subsets: ["latin", "thai"],
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
@@ -47,7 +53,7 @@ export default function RootLayout({
         "dark",
         google_sans.className,
         "font-sans",
-        instrumentSans.variable,
+        // instrumentSans.variable,
       )}
       suppressHydrationWarning
     >
@@ -61,6 +67,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <div className="pb-10"></div>
         </ThemeProvider>
       </body>
     </html>
