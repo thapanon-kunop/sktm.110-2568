@@ -50,7 +50,6 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
-        "dark",
         google_sans.className,
         "font-sans",
         // instrumentSans.variable,
@@ -61,7 +60,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
