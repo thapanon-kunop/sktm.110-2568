@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation";
 export default function CleaningDutyPage() {
   const router = useRouter();
   return (
-    <main className="mt-5 flex justify-center">
+    <main className="mt-5 flex justify-center px-5">
       <Empty className="border border-dashed max-w-sm">
         <EmptyHeader>
           <EmptyMedia variant={"icon"}>
