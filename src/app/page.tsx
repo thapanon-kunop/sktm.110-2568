@@ -23,22 +23,22 @@ export default function Home() {
                   กลุ่มบริหารงบประมาณ
                 </Link>
                 <Link
-                  href={"/docs/schedule"}
+                  href={"/tasks"}
                   className={buttonVariants({
                     variant: "secondary",
                     className: "d-block w-full",
                   })}
                 >
-                  ตารางเรียน
+                  Assignments Center
                 </Link>
                 <Link
-                  href={"/docs/cleaning-duty"}
+                  href={"/docs/schedule"}
                   className={buttonVariants({
                     variant: "outline",
                     className: "d-block w-full",
                   })}
                 >
-                  ตารางเวรประจำวัน
+                  ตารางเรียน
                 </Link>
               </CardContent>
             </Card>

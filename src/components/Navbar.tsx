@@ -11,6 +11,7 @@ import {
   RiMenuFill,
   RiSchoolLine,
   RiTable3,
+  RiTaskLine,
 } from "@remixicon/react";
 import {
   DropdownMenu,
@@ -49,6 +50,11 @@ const menu: MenuCategory[] = [
         icon: <RiBankCardLine />,
         title: "กลุ่มบริหารงบประมาณ",
         href: "/budget",
+      },
+      {
+        icon: <RiTaskLine />,
+        title: "Assignments Center",
+        href: "/tasks",
       },
     ],
   },
