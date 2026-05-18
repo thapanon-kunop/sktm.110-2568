@@ -21,6 +21,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { Announcement, announcementHeader } from "./Announcement";
+import { Space } from "@/components/EndSpace";
 
 export default function BudgetPage() {
   return (
@@ -113,6 +114,7 @@ export default function BudgetPage() {
           </section>
         </div>
       </main>
+      <Space />
     </>
   );
 }

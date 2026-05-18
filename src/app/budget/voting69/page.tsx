@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Question1 } from "./Question1";
 import { Question2 } from "./Question2";
 import { Question3 } from "./Question3";
+import { Space } from "@/components/EndSpace";
 
 // Configs
 export interface QuestionDataCounting {
@@ -33,6 +34,7 @@ export default function Voting69Page() {
           <Question3 />
         </section>
       </main>
+      <Space />
     </>
   );
 }

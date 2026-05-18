@@ -1,3 +1,4 @@
+import { Space } from "@/components/EndSpace";
 import { Header } from "@/components/Header";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -68,6 +69,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Space />
     </>
   );
 }
