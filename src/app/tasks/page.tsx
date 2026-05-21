@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function TaskPage() {
   useEffect(() => {
-    window.location.href = "https://myskttask.my.canva.site/";
+    window.location.replace("https://myskttask.my.canva.site/");
   });
 
   return (
