@@ -1,3 +1,5 @@
+![Project Picture](./assets/project_pic.png)
+
 # Classroom Website Project (เว็บไซต์สำหรับห้องเรียน)
 
 This is a Next.js project bootstrapped with `create-next-app`, currently serving as a static website for our classroom, with plans to integrate a back-end system in the future.
