@@ -53,6 +53,8 @@ We welcome all contributions! If you want to add new features, fix bugs, or impr
 * **Styling:** Tailwind CSS (v4)
 * **Package Manager:** pnpm
 
+![Tech Stack](https://skillicons.dev/icons?i=next,react,tailwind,pnpm)
+
 ---
 
 *This README.md is generated my AI.*
