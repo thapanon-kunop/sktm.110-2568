@@ -26,7 +26,7 @@ import { Space } from "@/components/EndSpace";
 export default function BudgetPage() {
   return (
     <>
-      <Header>กลุ่มบริหารงานงบประมาณ</Header>
+      <Header>กลุ่มเหรัญญิกห้อง</Header>
       <main className="mt-5 flex flex-col gap-5">
         <section className="px-5">
           <Card>
@@ -63,7 +63,7 @@ export default function BudgetPage() {
               <CardHeader>
                 <CardTitle>ประกาศ</CardTitle>
                 <CardDescription>
-                  ประกาศล่าสุดจากกลุ่มบริหารงานงบประมาณ
+                  ประกาศล่าสุดจากกลุ่มเหรัญญิกห้อง
                 </CardDescription>
                 <CardAction>
                   <Dialog>

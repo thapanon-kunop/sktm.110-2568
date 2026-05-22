@@ -48,7 +48,7 @@ const menu: MenuCategory[] = [
       },
       {
         icon: <RiBankCardLine />,
-        title: "กลุ่มบริหารงบประมาณ",
+        title: "กลุ่มเหรัญญิกห้อง",
         href: "/budget",
       },
       {
