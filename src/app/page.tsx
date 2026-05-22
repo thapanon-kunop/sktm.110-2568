@@ -20,7 +20,7 @@ export default function Home() {
                   href={"/budget"}
                   className={buttonVariants({ className: "d-block w-full" })}
                 >
-                  กลุ่มบริหารงบประมาณ
+                  กลุ่มเหรัญญิกห้อง
                 </Link>
                 <Link
                   href={"/tasks"}
