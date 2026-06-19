@@ -6,7 +6,7 @@ export function Header({ children }: { children?: React.ReactNode }) {
   return (
     <header className="relative">
       <Image
-        src={"/group_pic110.jpg"}
+        src={"/group_pic210.jpg"}
         alt="รูปภาพรวม"
         width={"1080"}
         height={"355"}
